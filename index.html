@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>To My Beautiful Baby 💕</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  min-height:100vh;
+
+  font-family:Arial,sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      #fff,
+      #ffe4ec 45%,
+      #ffd6e3
+    );
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  overflow:hidden;
+
+  color:#4a2632;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart{
+
+  position:fixed;
+
+  bottom:-40px;
+
+  font-size:22px;
+
+  animation:floatUp linear infinite;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  z-index:0;
+}
+
+@keyframes floatUp{
+
+  0%{
+    transform:translateY(0) rotate(0deg);
+    opacity:0;
+  }
+
+  15%{
+    opacity:.8;
+  }
+
+  85%{
+    opacity:.8;
+  }
+
+  100%{
+    transform:translateY(-115vh) rotate(360deg);
+    opacity:0;
+  }
+
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.container{
+
+  width:92%;
+
+  max-width:430px;
+
+  max-height:90vh;
+
+  overflow-y:auto;
+
+  background:rgba(255,255,255,.95);
+
+  border-radius:30px;
+
+  padding:24px 22px 30px;
+
+  text-align:center;
+
+  box-shadow:
+    0 18px 50px rgba(196,72,111,.2);
+
+  position:relative;
+
+  z-index:2;
+
+  backdrop-filter:blur(10px);
+
+  scrollbar-width:none;
+}
+
+.container::-webkit-scrollbar{
+  display:none;
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-area{
+
+  width:100%;
+
+  margin-bottom:22px;
+
+  padding:4px;
+}
+
+#musicBtn{
+
+  width:100%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e83e70,
+      #f65386
+    );
+
+  color:white;
+
+  border:none;
+
+  padding:15px 18px;
+
+  border-radius:50px;
+
+  font-size:15px;
+
+  font-weight:bold;
+
+  box-shadow:
+    0 8px 22px rgba(232,62,112,.28);
+
+  cursor:pointer;
+
+  animation:musicPulse 2s infinite;
+
+  transition:.25s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+#musicBtn::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+
+  left:-100%;
+
+  width:60%;
+
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.35),
+      transparent
+    );
+
+  animation:musicShine 3s infinite;
+}
+
+#musicBtn:hover{
+
+  transform:scale(1.03);
+
+}
+
+#musicBtn:active{
+
+  transform:scale(.97);
+
+}
+
+@keyframes musicPulse{
+
+  0%,100%{
+    box-shadow:
+      0 8px 22px rgba(232,62,112,.25);
+  }
+
+  50%{
+    box-shadow:
+      0 8px 30px rgba(232,62,112,.45);
+  }
+
+}
+
+@keyframes musicShine{
+
+  0%{
+    left:-100%;
+  }
+
+  45%,100%{
+    left:130%;
+  }
+
+}
+
+
+/* =========================
+   MUSIC HINT
+========================= */
+
+.music-hint{
+
+  font-size:11px;
+
+  color:#a36b7b;
+
+  margin-top:7px;
+
+  line-height:1.4;
+}
+
+
+/* =========================
+   TOP HEART
+========================= */
+
+.top-heart{
+
+  font-size:38px;
+
+  margin-bottom:10px;
+
+  animation:heartbeat 1.4s infinite;
+}
+
+@keyframes heartbeat{
+
+  0%,100%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.15);
+  }
+
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-box{
+
+  width:150px;
+
+  height:150px;
+
+  margin:0 auto 20px;
+
+  border-radius:50%;
+
+  overflow:hidden;
+
+  border:5px solid #ffb6c9;
+
+  background:#ffe8ef;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  box-shadow:
+    0 8px 25px rgba(255,105,145,.2);
+}
+
+.photo-box img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+}
+
+.placeholder{
+  font-size:55px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+h1{
+
+  font-size:28px;
+
+  line-height:1.25;
+
+  color:#d6336c;
+
+  margin-bottom:12px;
+}
+
+h2{
+  color:#d6336c;
+}
+
+.subtitle{
+
+  font-size:15px;
+
+  line-height:1.6;
+
+  color:#76505c;
+
+  margin-bottom:25px;
+}
+
+.message{
+
+  font-size:16px;
+
+  line-height:1.7;
+
+  color:#663b48;
+
+  margin:15px 0 25px;
+}
+
+.name-highlight{
+
+  color:#e83e70;
+
+  font-weight:700;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+
+  border:none;
+
+  border-radius:50px;
+
+  padding:14px 28px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.25s ease;
+
+  font-family:inherit;
+
+  -webkit-tap-highlight-color:transparent;
+}
+
+button:active{
+  transform:scale(.96);
+}
+
+.buttons{
+
+  display:flex;
+
+  gap:14px;
+
+  justify-content:center;
+
+  position:relative;
+
+  min-height:55px;
+
+  width:100%;
+}
+
+#yesBtn{
+
+  background:#e83e70;
+
+  color:white;
+
+  box-shadow:
+    0 7px 18px rgba(232,62,112,.25);
+}
+
+#yesBtn:hover{
+
+  transform:scale(1.06);
+
+  background:#d92f61;
+}
+
+#noBtn{
+
+  background:#ffe0e9;
+
+  color:#c52f5d;
+
+  position:relative;
+
+  z-index:5;
+}
+
+.continue-btn{
+
+  background:#e83e70;
+
+  color:white;
+
+  width:100%;
+
+  margin-top:5px;
+
+  box-shadow:
+    0 7px 18px rgba(232,62,112,.2);
+}
+
+.continue-btn:hover{
+  transform:translateY(-2px);
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
+.hidden{
+  display:none!important;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+label{
+
+  display:block;
+
+  text-align:left;
+
+  margin-top:18px;
+
+  margin-bottom:7px;
+
+  font-weight:bold;
+
+  color:#71394b;
+}
+
+input,
+select{
+
+  width:100%;
+
+  padding:15px;
+
+  border:2px solid #ffd0dc;
+
+  border-radius:15px;
+
+  background:#fff8fa;
+
+  color:#5b3040;
+
+  font-size:16px;
+
+  outline:none;
+
+  font-family:inherit;
+
+  appearance:auto;
+}
+
+input:focus,
+select:focus{
+
+  border-color:#e83e70;
+
+  background:white;
+
+  box-shadow:
+    0 0 0 3px rgba(232,62,112,.08);
+}
+
+
+/* =========================
+   PLANNER
+========================= */
+
+.plan-icon{
+
+  font-size:55px;
+
+  margin-bottom:8px;
+}
+
+.plan-title{
+
+  font-size:27px;
+
+  color:#d6336c;
+
+  margin-bottom:10px;
+}
+
+.plan-description{
+
+  font-size:14px;
+
+  color:#805766;
+
+  line-height:1.5;
+
+  margin-bottom:15px;
+}
+
+
+/* =========================
+   CONFIRMATION
+========================= */
+
+.confirm-box{
+
+  background:#fff0f5;
+
+  border-radius:20px;
+
+  padding:18px;
+
+  margin:20px 0;
+
+  text-align:left;
+
+  border:1px solid #ffd8e2;
+}
+
+.confirm-row{
+
+  padding:10px 0;
+
+  border-bottom:1px solid #ffd8e2;
+
+  color:#663b48;
+
+  line-height:1.5;
+}
+
+.confirm-row:last-child{
+  border-bottom:none;
+}
+
+.confirm-row strong{
+  color:#d6336c;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final-heart{
+
+  font-size:75px;
+
+  animation:heartbeat 1.2s infinite;
+
+  margin-bottom:10px;
+}
+
+.final-title{
+
+  font-size:30px;
+
+  color:#d6336c;
+
+  margin-bottom:15px;
+}
+
+.love-message{
+
+  font-size:16px;
+
+  line-height:1.8;
+
+  color:#653d4b;
+}
+
+.signature{
+
+  margin-top:20px;
+
+  color:#e83e70;
+
+  font-size:20px;
+
+  font-weight:bold;
+}
+
+.small-text{
+
+  font-size:12px;
+
+  color:#a36b7b;
+
+  margin-top:18px;
+}
+
+
+/* =========================
+   FULL PHOTO
+   NO CROPPING
+========================= */
+
+.memory-photo{
+
+  width:100%;
+
+  height:auto;
+
+  max-width:100%;
+
+  max-height:none;
+
+  object-fit:contain;
+
+  object-position:center;
+
+  display:block;
+
+  border-radius:22px;
+
+  border:4px solid #ffd0dc;
+
+  margin:8px 0 20px;
+
+  background:#fff5f8;
+
+  box-shadow:
+    0 10px 25px rgba(214,51,108,.15);
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories-title{
+
+  font-size:28px;
+
+  color:#d6336c;
+
+  margin-bottom:8px;
+}
+
+.memories-subtitle{
+
+  font-size:14px;
+
+  color:#805766;
+
+  line-height:1.5;
+
+  margin-bottom:18px;
+}
+
+.memory-slider{
+
+  position:relative;
+
+  width:100%;
+
+  overflow:hidden;
+
+  border-radius:24px;
+
+}
+
+.memory-card{
+
+  display:none;
+
+  animation:memoryFade .4s ease;
+
+}
+
+.memory-card.active{
+  display:block;
+}
+
+@keyframes memoryFade{
+
+  from{
+
+    opacity:0;
+
+    transform:translateX(15px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+  }
+
+}
+
+
+/* =========================
+   MEMORY IMAGES
+   NO CROPPING
+========================= */
+
+.memory-card img{
+
+  width:100%;
+
+  height:auto;
+
+  max-width:100%;
+
+  max-height:none;
+
+  object-fit:contain;
+
+  object-position:center;
+
+  display:block;
+
+  border-radius:24px;
+
+  border:4px solid #ffd0dc;
+
+  background:#fff5f8;
+
+  box-shadow:
+    0 10px 25px rgba(214,51,108,.15);
+}
+
+.memory-caption{
+
+  margin-top:12px;
+
+  font-size:15px;
+
+  line-height:1.5;
+
+  color:#663b48;
+
+  min-height:45px;
+}
+
+.memory-buttons{
+
+  display:flex;
+
+  gap:10px;
+
+  margin-top:17px;
+}
+
+.memory-buttons button{
+
+  flex:1;
+
+  padding:12px 15px;
+
+  font-size:14px;
+}
+
+.memory-prev{
+
+  background:#ffe0e9;
+
+  color:#c52f5d;
+}
+
+.memory-next{
+
+  background:#e83e70;
+
+  color:white;
+}
+
+.memory-dots{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:7px;
+
+  margin-top:15px;
+}
+
+.memory-dot{
+
+  width:9px;
+
+  height:9px;
+
+  border-radius:50%;
+
+  background:#ffd0dc;
+
+  transition:.25s;
+
+}
+
+.memory-dot.active{
+
+  width:22px;
+
+  border-radius:10px;
+
+  background:#e83e70;
+}
+
+
+/* =========================
+   SURPRISE
+========================= */
+
+.surprise-box{
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff0f5,
+      #fff8fa
+    );
+
+  border:2px solid #ffd0dc;
+
+  border-radius:22px;
+
+  padding:20px;
+
+  margin-top:15px;
+
+  box-shadow:
+    0 8px 20px rgba(214,51,108,.08);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:380px){
+
+  .container{
+
+    padding:22px 17px 28px;
+
+  }
+
+  h1{
+    font-size:24px;
+  }
+
+  .photo-box{
+
+    width:130px;
+
+    height:130px;
+
+  }
+
+  button{
+
+    padding:13px 21px;
+
+  }
+
+  #musicBtn{
+
+    font-size:14px;
+
+    padding:14px 12px;
+
+  }
+
+  .music-hint{
+
+    font-size:10px;
+
+  }
+
+  .memory-card img{
+
+    width:100%;
+
+    height:auto;
+
+  }
+
+  .memory-photo{
+
+    width:100%;
+
+    height:auto;
+
+  }
+
+}
+
+
+/* =========================
+   EXTRA SMALL PHONES
+========================= */
+
+@media(max-width:320px){
+
+  .container{
+
+    width:94%;
+
+    padding:20px 15px 25px;
+
+  }
+
+  #musicBtn{
+
+    font-size:13px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+   FLOATING HEARTS
+========================= -->
+
+<div
+class="heart"
+style="left:5%;animation-duration:8s;"
+>
+💕
+</div>
+
+<div
+class="heart"
+style="left:18%;animation-duration:11s;animation-delay:2s;"
+>
+💗
+</div>
+
+<div
+class="heart"
+style="left:32%;animation-duration:9s;animation-delay:4s;"
+>
+💖
+</div>
+
+<div
+class="heart"
+style="left:50%;animation-duration:12s;animation-delay:1s;"
+>
+💕
+</div>
+
+<div
+class="heart"
+style="left:68%;animation-duration:10s;animation-delay:3s;"
+>
+💗
+</div>
+
+<div
+class="heart"
+style="left:82%;animation-duration:9s;animation-delay:5s;"
+>
+💖
+</div>
+
+<div
+class="heart"
+style="left:94%;animation-duration:13s;animation-delay:1s;"
+>
+💓
+</div>
+
+
+<!-- =========================
+   AUDIO
+========================= -->
+
+<audio id="loveMusic" loop>
+
+  <source
+    src="music.mp3"
+    type="audio/mpeg"
+  >
+
+</audio>
+
+
+<main class="container">
+
+
+<!-- =========================
+   MUSIC BUTTON
+========================= -->
+
+<div class="music-area">
+
+<button
+id="musicBtn"
+onclick="toggleMusic()"
+>
+
+🎵 Tap here to play our song 💕
+  
+</button>
+
+<p class="music-hint">
+
+🎧 A little song to make this moment sweeter...
+
+</p>
+
+</div>
+
+
+<!-- ==================================================
+FIRST SCREEN
+================================================== -->
+
+<section id="firstScreen">
+
+
+<div class="top-heart">
+💗
+</div>
+
+
+<div class="photo-box">
+
+<img
+src="baby.jpg"
+alt="My baby"
+
+onerror="
+this.style.display='none';
+this.nextElementSibling.style.display='block';
+"
+>
+
+<div
+class="placeholder"
+style="display:none;"
+>
+🥰
+</div>
+
+</div>
+
+
+<h1>
+
+Hey
+<span class="name-highlight">
+MARYAM
+</span>
+💕
+
+</h1>
+
+
+<p class="subtitle">
+
+I have a little question for you...
+
+<br>
+
+And please think carefully before answering 😌❤️
+
+</p>
+
+
+<h1 style="font-size:24px;">
+
+Will you go on a date with me? 🥺💕
+
+</h1>
+
+
+<div class="buttons">
+
+
+<button
+id="yesBtn"
+onclick="sayYes()"
+>
+
+YES ❤️
+
+</button>
+
+
+<button
+id="noBtn"
+onclick="moveNo()"
+ontouchstart="moveNo()"
+>
+
+NO 😭
+
+</button>
+
+
+</div>
+
+
+<p class="small-text">
+
+Choose wisely o 😂💕
+
+</p>
+
+</section>
+
+
+
+<!-- ==================================================
+YES SCREEN
+================================================== -->
+
+<section
+id="yesScreen"
+class="hidden"
+>
+
+<div class="plan-icon">
+🥹❤️
+</div>
+
+
+<h2 class="plan-title">
+
+Yessss! 😭💕
+
+</h2>
+
+
+<p class="message">
+
+I knew you wouldn't disappoint me 😂❤️
+
+<br><br>
+
+You just made me very happy.
+
+<br>
+
+But wait... there's more 👀
+
+</p>
+
+
+<button
+class="continue-btn"
+onclick="continueNext()"
+>
+
+Continue 💕
+
+</button>
+
+</section>
+
+
+
+<!-- ==================================================
+SECOND SCREEN
+================================================== -->
+
+<section
+id="nextScreen"
+class="hidden"
+>
+
+<div class="plan-icon">
+💌
+</div>
+
+
+<h2 class="plan-title">
+
+One more thing...
+
+</h2>
+
+
+<p class="message">
+
+I don't just want a normal date.
+
+<br><br>
+
+I want us to create a little memory
+that we'll both remember. 🥰❤️
+
+<br><br>
+
+So let's plan our little moment together.
+
+</p>
+
+
+<button
+class="continue-btn"
+onclick="startDate()"
+>
+
+Let's plan it 😌💕
+
+</button>
+
+</section>
+
+
+
+<!-- ==================================================
+DATE PLANNER
+================================================== -->
+
+<section
+id="plannerScreen"
+class="hidden"
+>
+
+<div class="plan-icon">
+📅
+</div>
+
+
+<h2 class="plan-title">
+
+So... when are you free? 💕
+
+</h2>
+
+
+<p class="plan-description">
+
+Pick a day and time that works for you.
+
+</p>
+
+
+<label for="date">
+
+Choose a date 📅
+
+</label>
+
+
+<input
+type="date"
+id="date"
+>
+
+
+<label for="time">
+
+Choose a time ⏰
+
+</label>
+
+
+<input
+type="time"
+id="time"
+>
+
+
+<label for="place">
+
+Where should we go? 📍
+
+</label>
+
+
+<select id="place">
+
+<option value="">
+Choose a place
+</option>
+
+<option value="Anywhere you choose 💕">
+Anywhere you choose 💕
+</option>
+
+<option value="A nice restaurant 🍽️">
+A nice restaurant 🍽️
+</option>
+
+<option value="Cinema 🎬">
+Cinema 🎬
+</option>
+
+<option value="A quiet place 🌹">
+A quiet place 🌹
+</option>
+
+<option value="It's a surprise 😌">
+It's a surprise 😌
+</option>
+
+</select>
+
+
+<button
+class="continue-btn"
+onclick="confirmDate()"
+style="margin-top:25px;"
+>
+
+Set our date 💕✨
+
+</button>
+
+
+<p class="small-text">
+
+No pressure... just pick what makes you happy 🥰
+
+</p>
+
+</section>
+
+
+
+<!-- ==================================================
+CONFIRM SCREEN
+================================================== -->
+
+<section
+id="confirmScreen"
+class="hidden"
+>
+
+<div class="plan-icon">
+🥰
+</div>
+
+
+<h2 class="plan-title">
+
+It's a date! 💕
+
+</h2>
+
+
+<p class="message">
+
+Look what we have planned...
+
+</p>
+
+
+<div class="confirm-box">
+
+
+<div class="confirm-row">
+
+📅
+<strong>Date:</strong>
+
+<span id="selectedDate"></span>
+
+</div>
+
+
+<div class="confirm-row">
+
+⏰
+<strong>Time:</strong>
+
+<span id="selectedTime"></span>
+
+</div>
+
+
+<div class="confirm-row">
+
+📍
+<strong>Place:</strong>
+
+<span id="selectedPlace"></span>
+
+</div>
+
+
+</div>
+
+
+<p class="message">
+
+I can't wait to spend that time with you. 🥹❤️
+
+</p>
+
+
+<button
+class="continue-btn"
+onclick="showFinal()"
+>
+
+One last thing... 💌
+
+</button>
+
+</section>
+
+
+
+<!-- ==================================================
+FINAL SCREEN
+================================================== -->
+
+<section
+id="finalScreen"
+class="hidden"
+>
+
+
+<div class="final-heart">
+❤️
+</div>
+
+
+<h2 class="final-title">
+
+For My MARYAM 💕
+
+</h2>
+
+
+<img
+src="us.jpg"
+class="memory-photo"
+alt="Our memory"
+
+onerror="
+this.style.display='none';
+"
+>
+
+
+<p class="love-message">
+
+Out of all the people in this world,
+
+I'm just happy that I get to have
+someone special like you in my life. 🥹❤️
+
+<br><br>
+
+I hope this little website made you smile.
+
+<br><br>
+
+And yes...
+
+the real surprise is still waiting for you. 👀💕
+
+</p>
+
+
+<div class="signature">
+
+With love,
+
+<br>
+
+Your Baby ❤️
+
+</div>
+
+
+<button
+class="continue-btn"
+onclick="openMemories()"
+style="margin-top:25px;"
+>
+
+See our memories 📸💕
+
+</button>
+
+
+<button
+class="continue-btn"
+onclick="openSurprise()"
+style="margin-top:12px;"
+>
+
+Open your surprise 🎁
+
+</button>
+
+
+<p class="small-text">
+
+Made specially for you 💗
+
+</p>
+
+</section>
+
+
+
+<!-- ==================================================
+OUR MEMORIES
+================================================== -->
+
+<section
+id="memoriesScreen"
+class="hidden"
+>
+
+
+<div class="plan-icon">
+📸❤️
+</div>
+
+
+<h2 class="memories-title">
+
+Our Memories 💕
+
+</h2>
+
+
+<p class="memories-subtitle">
+
+Every picture has a little story...
+and I hope we create many more together. 🥹❤️
+
+</p>
+
+
+<div class="memory-slider">
+
+
+<!-- MEMORY 1 -->
+
+<div class="memory-card active">
+
+<img
+src="memory1.jpg"
+alt="Our memory 1"
+
+onerror="
+this.src='baby.jpg';
+"
+>
+
+
+<p class="memory-caption">
+
+The smile that always makes my day. 🥹❤️
+
+</p>
+
+</div>
+
+
+<!-- MEMORY 2 -->
+
+<div class="memory-card">
+
+<img
+src="memory2.jpg"
+alt="Our memory 2"
+
+onerror="
+this.src='us.jpg';
+"
+>
+
+
+<p class="memory-caption">
+
+One of those moments I wish I could replay. 💕✨
+
+</p>
+
+</div>
+
+
+<!-- MEMORY 3 -->
+
+<div class="memory-card">
+
+<img
+src="memory3.jpg"
+alt="Our memory 3"
+
+onerror="
+this.src='baby.jpg';
+"
+>
+
+
+<p class="memory-caption">
+
+And hopefully... just the beginning of many more. 🥰❤️
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="memory-dots">
+
+
+<span
+class="memory-dot active"
+onclick="showMemory(0)"
+>
+</span>
+
+
+<span
+class="memory-dot"
+onclick="showMemory(1)"
+>
+</span>
+
+
+<span
+class="memory-dot"
+onclick="showMemory(2)"
+>
+</span>
+
+
+</div>
+
+
+<div class="memory-buttons">
+
+
+<button
+class="memory-prev"
+onclick="previousMemory()"
+>
+
+← Previous
+
+</button>
+
+
+<button
+class="memory-next"
+onclick="nextMemory()"
+>
+
+Next →
+
+</button>
+
+
+</div>
+
+
+<button
+class="continue-btn"
+onclick="openSurprise()"
+style="margin-top:20px;"
+>
+
+Continue to your surprise 🎁
+
+</button>
+
+
+<p class="small-text">
+
+Swipe through our little memories ❤️
+
+</p>
+
+</section>
+
+
+
+<!-- ==================================================
+SURPRISE SCREEN
+================================================== -->
+
+<section
+id="surpriseScreen"
+class="hidden"
+>
+
+
+<div class="final-heart">
+🎁
+</div>
+
+
+<h2 class="final-title">
+
+You found it! 🥹❤️
+
+</h2>
+
+
+<img
+src="baby.jpg"
+class="memory-photo"
+alt="My baby"
+
+onerror="
+this.style.display='none';
+"
+>
+
+
+<div class="surprise-box">
+
+
+<p class="love-message">
+
+My beautiful baby,
+
+<br><br>
+
+Thank you for being you. ❤️
+
+<br><br>
+
+It may just be a website,
+but every little part of it was made
+with you in mind.
+
+<br><br>
+
+I love seeing you happy.
+I love making you smile.
+
+<br><br>
+
+And I hope we make many more
+beautiful memories together. 🥺💕
+
+</p>
+
+</div>
+
+
+<div class="signature">
+
+❤️ Your Baby ❤️
+
+</div>
+
+
+<p class="small-text">
+
+This little surprise was made specially for you.
+
+</p>
+
+</section>
+
+
+</main>
+
+
+
+<script>
+
+/* =========================
+   ELEMENTS
+========================= */
+
+const music =
+document.getElementById("loveMusic");
+
+const musicBtn =
+document.getElementById("musicBtn");
+
+const noBtn =
+document.getElementById("noBtn");
+
+
+/* =========================
+   MUSIC
+========================= */
+
+function toggleMusic(){
+
+  if(music.paused){
+
+    music.play()
+
+    .then(function(){
+
+      musicBtn.textContent =
+      "⏸️ Our song is playing 💕";
+
+    })
+
+    .catch(function(){
+
+      alert(
+        "Tap the music button again to play the song 🎵💕"
+      );
+
+    });
+
+  }
+
+  else{
+
+    music.pause();
+
+    musicBtn.textContent =
+    "🎵 Tap here to play our song 💕";
+
+  }
+
+}
+
+
+/* =========================
+   YES BUTTON
+========================= */
+
+function sayYes(){
+
+  document
+  .getElementById("firstScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("yesScreen")
+  .classList.remove("hidden");
+
+}
+
+
+/* =========================
+   MOVING NO BUTTON
+========================= */
+
+function moveNo(){
+
+  const container =
+  document.querySelector(".container");
+
+  const button =
+  document.getElementById("noBtn");
+
+  const containerRect =
+  container.getBoundingClientRect();
+
+  const buttonWidth =
+  button.offsetWidth;
+
+  const maxX =
+  Math.max(
+    20,
+    containerRect.width -
+    buttonWidth -
+    20
+  );
+
+  const maxY = 80;
+
+  const randomX =
+  Math.floor(
+    Math.random() * maxX
+  );
+
+  const randomY =
+    Math.floor(
+      Math.random() * maxY
+    ) - 30;
+
+  button.style.position =
+    "absolute";
+
+  button.style.left =
+    randomX + "px";
+
+  button.style.top =
+    randomY + "px";
+
+}
+
+
+/* =========================
+   CONTINUE
+========================= */
+
+function continueNext(){
+
+  document
+  .getElementById("yesScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("nextScreen")
+  .classList.remove("hidden");
+
+}
+
+
+/* =========================
+   START DATE
+========================= */
+
+function startDate(){
+
+  document
+  .getElementById("nextScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("plannerScreen")
+  .classList.remove("hidden");
+
+
+  const now =
+  new Date();
+
+  const year =
+  now.getFullYear();
+
+  const month =
+  String(
+    now.getMonth() + 1
+  ).padStart(2,"0");
+
+  const day =
+  String(
+    now.getDate()
+  ).padStart(2,"0");
+
+  const today =
+    `${year}-${month}-${day}`;
+
+  document
+  .getElementById("date")
+  .min = today;
+
+}
+
+
+/* =========================
+   CONFIRM DATE
+========================= */
+
+function confirmDate(){
+
+  const date =
+  document
+  .getElementById("date")
+  .value;
+
+  const time =
+  document
+  .getElementById("time")
+  .value;
+
+  const place =
+  document
+  .getElementById("place")
+  .value;
+
+
+  if(!date){
+
+    alert(
+      "Choose a date first my baby 🥺💕"
+    );
+
+    return;
+
+  }
+
+
+  if(!time){
+
+    alert(
+      "Choose a time too 😌❤️"
+    );
+
+    return;
+
+  }
+
+
+  if(!place){
+
+    alert(
+      "And where are we going? 😂💕"
+    );
+
+    return;
+
+  }
+
+
+  const dateObject =
+    new Date(
+      date + "T00:00:00"
+    );
+
+
+  const formattedDate =
+    dateObject.toLocaleDateString(
+      "en-US",
+      {
+        weekday:"long",
+        year:"numeric",
+        month:"long",
+        day:"numeric"
+      }
+    );
+
+
+  const timeObject =
+    new Date(
+      "2000-01-01T" + time
+    );
+
+
+  const formattedTime =
+    timeObject.toLocaleTimeString(
+      "en-US",
+      {
+        hour:"numeric",
+        minute:"2-digit"
+      }
+    );
+
+
+  document
+  .getElementById("selectedDate")
+  .textContent =
+    " " + formattedDate;
+
+
+  document
+  .getElementById("selectedTime")
+  .textContent =
+    " " + formattedTime;
+
+
+  document
+  .getElementById("selectedPlace")
+  .textContent =
+    " " + place;
+
+
+  document
+  .getElementById("plannerScreen")
+  .classList.add("hidden");
+
+
+  document
+  .getElementById("confirmScreen")
+  .classList.remove("hidden");
+
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+function showFinal(){
+
+  document
+  .getElementById("confirmScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("finalScreen")
+  .classList.remove("hidden");
+
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+function openMemories(){
+
+  document
+  .getElementById("finalScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("memoriesScreen")
+  .classList.remove("hidden");
+
+}
+
+
+let currentMemory = 0;
+
+const memoryCards =
+document.querySelectorAll(".memory-card");
+
+const memoryDots =
+document.querySelectorAll(".memory-dot");
+
+
+function showMemory(index){
+
+  if(index < 0){
+
+    index =
+    memoryCards.length - 1;
+
+  }
+
+
+  if(index >= memoryCards.length){
+
+    index = 0;
+
+  }
+
+
+  currentMemory = index;
+
+
+  memoryCards.forEach(
+    function(card,i){
+
+      card.classList.toggle(
+        "active",
+        i === currentMemory
+      );
+
+    }
+  );
+
+
+  memoryDots.forEach(
+    function(dot,i){
+
+      dot.classList.toggle(
+        "active",
+        i === currentMemory
+      );
+
+    }
+  );
+
+}
+
+
+function nextMemory(){
+
+  showMemory(
+    currentMemory + 1
+  );
+
+}
+
+
+function previousMemory(){
+
+  showMemory(
+    currentMemory - 1
+  );
+
+}
+
+
+/* =========================
+   SWIPE
+========================= */
+
+let touchStartX = 0;
+
+let touchEndX = 0;
+
+
+const memorySlider =
+document.querySelector(".memory-slider");
+
+
+memorySlider.addEventListener(
+  "touchstart",
+  function(event){
+
+    touchStartX =
+      event.changedTouches[0].screenX;
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+memorySlider.addEventListener(
+  "touchend",
+  function(event){
+
+    touchEndX =
+      event.changedTouches[0].screenX;
+
+    handleSwipe();
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+function handleSwipe(){
+
+  const difference =
+    touchStartX - touchEndX;
+
+
+  if(
+    Math.abs(difference) < 50
+  ){
+
+    return;
+
+  }
+
+
+  if(difference > 0){
+
+    nextMemory();
+
+  }
+
+  else{
+
+    previousMemory();
+
+  }
+
+}
+
+
+/* =========================
+   SURPRISE
+========================= */
+
+function openSurprise(){
+
+  document
+  .getElementById("finalScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("memoriesScreen")
+  .classList.add("hidden");
+
+  document
+  .getElementById("surpriseScreen")
+  .classList.remove("hidden");
+
+}
+
+
+/* =========================
+   RESET NO BUTTON
+========================= */
+
+function resetNoButton(){
+
+  noBtn.style.position =
+    "relative";
+
+  noBtn.style.left =
+    "auto";
+
+  noBtn.style.top =
+    "auto";
+
+}
+
+</script>
+
+</body>
+</html>
